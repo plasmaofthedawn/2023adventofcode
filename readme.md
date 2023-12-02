@@ -17,7 +17,7 @@ every day has two parts, and it can be compiled and run with
 `make dayXpartY`
 
 where `X` is the day 
-and `y` is the part
+and `Y` is the part
 
 the compiled stuff is in build ig
 

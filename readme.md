@@ -21,3 +21,11 @@ and `Y` is the part
 
 the compiled stuff is in build ig
 
+# python one liners
+
+there's python one liners in pythonsrc.
+
+just run em. there's no libraries.
+
+thankies.
+

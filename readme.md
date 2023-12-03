@@ -26,6 +26,7 @@ the compiled stuff is in build ig
 there's python one liners in pythonsrc.
 
 just run em. there's no libraries.
+run them in the root dir though
 
 thankies.
 

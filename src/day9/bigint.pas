@@ -88,7 +88,6 @@ begin
     end;
 end;
 
-
 operator shl (a: int512; b: int32) o: int512;
 var
     i: int32;

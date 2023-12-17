@@ -78,5 +78,20 @@ day8part2:
 	@echo
 	./build/day8part2
 
+day9part1:
+	fpc src/day9/part1.pas -obuild/day9part1 -g
+	@echo
+	./build/day9part1
+
+day9part2:
+	fpc src/day9/part2.pas -obuild/day9part2
+	@echo
+	./build/day9part2
+
+day9bigint:
+	fpc src/day9/bigint.pas -obuild/bigint -O3
+	@echo
+	./build/bigint
+
 clean:
 	rm build/*

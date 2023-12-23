@@ -30,3 +30,13 @@ run them in the root dir though
 
 thankies.
 
+# z80
+
+i did day 13 in z80 assembly language too. it's in z80src
+
+it uses zasm to compile and z80sim from [z80pack](https://www.autometer.de/unix4fun/z80pack/).
+
+i edited z80sim to not print out that giant logo at the beginning but otherwise it's just the newest one built.
+the binary is included though lol.
+
+

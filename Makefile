@@ -128,6 +128,21 @@ day13part2:
 	@echo
 	./build/day13part2
 
+day13part1z80:
+	zasm z80src/day13/part1.z80 -o build/day13part1.bin
+	cat z80src/preamble build/day13part1.bin > build/day13part1.bin0
+	@echo
+	./z80sim -xbuild/day13part1.bin0
+
+day14part1:
+	fpc src/day14/part1.pas -obuild/day14part1
+	@echo
+	./build/day14part1
+
+day14part2:
+	fpc src/day14/part2.pas -obuild/day14part2
+	@echo
+	./build/day14part2
 
 clean:
 	rm build/*

@@ -118,6 +118,16 @@ day12part2:
 	@echo
 	./build/day12part2
 
+day13part1:
+	fpc src/day13/part1.pas -obuild/day13part1
+	@echo
+	./build/day13part1
+
+day13part2:
+	fpc src/day13/part2.pas -obuild/day13part2
+	@echo
+	./build/day13part2
+
 
 clean:
 	rm build/*

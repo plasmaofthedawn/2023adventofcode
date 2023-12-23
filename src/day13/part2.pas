@@ -1,7 +1,7 @@
 {$mode objfpc}
 {$RANGECHECKS ON}
 
-program day12part1;
+program day13part1;
 uses sysutils;
 
 type

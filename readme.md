@@ -39,4 +39,7 @@ it uses zasm to compile and z80sim from [z80pack](https://www.autometer.de/unix4
 i edited z80sim to not print out that giant logo at the beginning but otherwise it's just the newest one built.
 the binary is included though lol.
 
+make day13part1z80 i think is the make for it.
+output is in the hl register.
+
 

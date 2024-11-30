@@ -1,0 +1,57 @@
+### startup
+
+# needed macros
+[q]sq
+
+#### user def
+# state macros
+
+# state 0
+[
+ ln48>qln57<q # return if > 48 or < 57  
+ ln48-ds1s2   # subtract 48 from value and put it in 1 and 2
+ 1ss          # transition to state 1
+]0:S
+
+# state 1
+[
+ [ln10!=q    # if = 10
+  l2l110*+   # calc 1 * 10 + 2 
+  lo+so      # sum into o
+  0ss        # transition to state 0
+  q          # return
+ ]x
+
+ ln48>qln57<q # return if not number
+ ln48-s2     # store into 2
+]1:S
+
+
+# load input into I array
+?                # read stdin
+_1               # append -1 to the end
+[z1-:Iz0<l]dslx  # load into array
+
+# start at the beginning
+0si
+
+# default current state
+0ss
+
+# start of loop
+[
+ li;Idsn    # read into n (and leaves it on top)
+ r_1=q      # quit if n = -1
+
+ ls;Sx      # execute depending on state
+     
+ # end of loop
+ li1+si    # increment input index
+ llx       # loop
+]
+dslx      # run loop
+
+lop
+
+
+
